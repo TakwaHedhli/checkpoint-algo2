@@ -1,0 +1,17 @@
+ALGORITHM somme
+VAR
+Tab : ARRAY_OF INTEGER [INTEGER];
+i : integer;
+j : integer;
+Sum : integer;
+Begin
+Write ('Print array');
+FOR i FROM  0 TO tab.Length Do
+FOR j FROM  0 TO tab.Length Do
+If (Tab[i] <> Tab[j])
+Sum := Sum + 1;
+End_If
+End_For
+End_For
+Write (Sum);
+End
